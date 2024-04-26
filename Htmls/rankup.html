@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../Logo/blaine.png"/>
+    <link rel="stylesheet" href="../Css/index.css"/>
+    <title>الرائد للحراسة | تنسيق ومتابعة</title>
+    <style>
+        fieldset {
+            border: 2px solid #333;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            direction: rtl;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"] {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        .button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <input type="checkbox" id="openmenu" class="menu-checkbox">
+        <div class="menu-icon">
+          <label for="openmenu" id="menu-label">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>    
+        </div>
+          <div class="menu-pane">
+            <nav>
+              <ul class="menu-links">
+                <li><a href="../Htmls/main.html">الصفحه الرئيسيه</a><span id="QC-info"></span></li>
+                <li><a href="../Htmls/index2.html">تقارير عمل يوميه</a></li>
+                <li><a href="../Htmls/index.html">تقارير اشراف</a></li>
+                <li><a href="../Htmls/manage.html">تاهيل الحرس</a></li>
+                <li><a href="../Htmls/rankup.html">تنسيق ومتابعة</a></li>
+              </ul>
+            </nav>
+          </div>
+        <div class="body-text">
+            <fieldset class="form-fieldset">
+                <legend></legend>
+                <div class="form-section">
+                    <label>بيانات الحارس :-</label>
+                    <br><br>
+                    <label>ايدي التذكرة :</label>
+                    <br>
+                    <input type="text" placeholder="cha1" id="cha1" required>
+                    <br><br>
+                    <label>الاسم :</label>
+                    <br>
+                    <input type="text" placeholder="name" id="name" required>
+                    <br><br>
+                    <label>كوده :</label>
+                    <br>
+                    <input type="text" placeholder="code" id="code" required>
+                    <br><br>
+                    <label>ايديه دسكورد :</label>
+                    <br>
+                    <input type="text" placeholder="disid" id="disid" required>
+                    <br><br>
+                    <label>رتبته :</label>
+                    <br>
+                    <input type="text" placeholder="ranks" id="ranks" required>
+                    <br>
+                    <br>
+                    <label>تواريخ :-</label>
+                    <br><br>
+                    <label>تاريخ التوظيف :</label>
+                    <br>
+                    <input type="text" placeholder="data" id="data" required>
+                    <br><br>
+                    <label>تاريخ الترقية :</label>
+                    <br>
+                    <input type="text" placeholder="data1" id="data1" required>
+                    <br>
+                    <label>
+                        <input type="radio" value="مطلوب" name="typ13"> مطلوب
+                        <input type="radio" value="غير_مطلوب" name="typ13"> غير مطلوب
+                    </label>
+                    <br>
+                    <br>
+                </div>
+                <div class="form-section">
+                    <label>بيانات تواجد الحارس :-</label>
+                    <br><br>
+                    <label>مجموع التقارير</label>
+                    <br>
+                    <input type="text" placeholder="allday" id="allday" required>
+                    <br><br>
+                    <label>مجموع ايام الحضور</label>
+                    <br>
+                    <input type="text" placeholder="days" id="days" required>
+                    <br>
+                    <label>
+                        <input type="radio" value="مطلوب" name="typ"> مطلوب
+                        <input type="radio" value="غير_مطلوب" name="typ"> غير مطلوب
+                    </label>
+                    <br><br>
+                    <label>مجموع تقارير مشرف الـG-40</label>
+                    <br>
+                    <input type="text" placeholder="g40" id="g40" required>
+                    <br>
+                    <label>
+                        <input type="radio" value="مطلوب" name="typ1"> مطلوب
+                        <input type="radio" value="غير_مطلوب" name="typ1"> غير مطلوب
+                    </label>
+                    <br><br>
+                    <label>مجموع تقارير مشرف الـG-42</label>
+                    <br>
+                    <input type="text" placeholder="g42" id="g42" required>
+                    <br>
+                    <label>
+                        <input type="radio" value="مطلوب" name="typ2"> مطلوب
+                        <input type="radio" value="غير_مطلوب" name="typ2"> غير مطلوب
+                    </label>
+                    <br><br>
+                    <label>مجموع تقارير العمليات</label>
+                    <br>
+                    <input type="text" placeholder="mang" id="mang" required>
+                    <br>
+                    <label>
+                        <input type="radio" value="مطلوب" name="typ3"> مطلوب
+                        <input type="radio" value="غير_مطلوب" name="typ3"> غير مطلوب
+                    </label>
+                    <br><br>
+                </div>
+                <div class="form-section">
+                    <label>بيانات دورات الحارس :-</label>
+                    <br><br>
+                    <label>شخصية حارس</label>
+                    <br>
+                    <input type="text" placeholder="d1" id="d1" required>
+                    <br>
+                    <label>
+                        <input type="radio" value="مطلوب" name="typ4"> مطلوب
+                        <input type="radio" value="غير_مطلوب" name="typ4"> غير مطلوب
+                    </label>
+                    <br><br>
+                    <label>تاهيل الافراد</label>
+                    <br>
+                    <input type="text" placeholder="d2" id="d2" required>
+                    <br>
+                    <label>
+                        <input type="radio" value="مطلوب" name="typ5"> مطلوب
+                        <input type="radio" value="غير_مطلوب" name="typ5"> غير مطلوب
+                    </label>
+                    <br><br>
+                    <label>عمليات</label>
+                    <br>
+                    <input type="text" placeholder="d3" id="d3" required>
+                    <br>
+                    <label>
+                        <input type="radio" value="مطلوب" name="typ6"> مطلوب
+                        <input type="radio" value="غير_مطلوب" name="typ6"> غير مطلوب
+                    </label>
+                    <br><br>
+                    <label>الجناح الجوي</label>
+                    <br>
+                    <input type="text" placeholder="d4" id="d4" required>
+                    <br>
+                    <label>
+                        <input type="radio" value="مطلوب" name="typ7"> مطلوب
+                        <input type="radio" value="غير_مطلوب" name="typ7"> غير مطلوب
+                    </label>
+                    <br><br>
+                    <label>حراسة السجن المركزي</label>
+                    <br>
+                    <input type="text" placeholder="d5" id="d5" required>
+                    <br>
+                    <label>
+                        <input type="radio" value="مطلوب" name="typ8"> مطلوب
+                        <input type="radio" value="غير_مطلوب" name="typ8"> غير مطلوب
+                    </label>
+                    <br><br>
+                    <label>خفر سواحل</label>
+                    <br>
+                    <input type="text" placeholder="d6" id="d6" required>
+                    <br>
+                    <label>
+                        <input type="radio" value="مطلوب" name="typ9"> مطلوب
+                        <input type="radio" value="غير_مطلوب" name="typ9"> غير مطلوب
+                    </label>
+                    <br><br>
+                    <label>حراسات شخصية</label>
+                    <br>
+                    <input type="text" placeholder="d7" id="d7" required>
+                    <br>
+                    <label>
+                        <input type="radio" value="مطلوب" name="typ10"> مطلوب
+                        <input type="radio" value="غير_مطلوب" name="typ10"> غير مطلوب
+                    </label>
+                    <br><br>
+                    <label>القوات الخاصة</label>
+                    <br>
+                    <input type="text" placeholder="d8" id="d8" required>
+                    <br>
+                    <label>
+                        <input type="radio" value="مطلوب" name="typ11"> مطلوب
+                        <input type="radio" value="غير_مطلوب" name="typ11"> غير مطلوب
+                    </label>
+                    <br><br>
+                    <label>دعم اسناد</label>
+                    <br>
+                    <input type="text" placeholder="d9" id="d9" required>
+                    <br>
+                    <label>
+                        <input type="radio" value="مطلوب" name="typ12"> مطلوب
+                        <input type="radio" value="غير_مطلوب" name="typ12"> غير مطلوب
+                    </label>
+                    <br><br>
+                    <label>ملاحظات</label>
+                    <br>
+                    <input type="text" placeholder="d10" id="d10" required>
+                    <br>
+                    <label>
+                        <input type="radio" value="مطلوب" name="typ14"> مطلوب
+                        <input type="radio" value="غير_مطلوب" name="typ14"> غير مطلوب
+                    </label>
+                    <br><br>
+                </div>
+                <button type="button" class="button" id="sub">بدأ</button><br><br>
+            </fieldset>
+            <p id="result"></p>
+        </div>
+    </div>
+</body>
+<script src="../JavaScripts/rankup.js"></script>
+</html>
